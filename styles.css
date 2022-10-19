@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fotod e perfil */
+.foto{
+    height: 300px;
+    width: 300px;
+    background-image: url("./resources/foto/foto-talento.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 200px;
+}
+
+/* conosimiento = tamaño de los contenedores para los logos */
+
+.conosimiento{
+    height: 100px;
+    width: 100px;
+}
+
+/* logos de conosimientos y programas */
+.dart{
+    background-image: url("./resources/logos/logo_dart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flutter{
+    background-image: url("./resources/logos/logo_futter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.html{
+    background-image: url("./resources/logos/logo-html.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.js{
+    background-image: url("./resources/logos/logo_js.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.css{
+    background-image: url("./resources/logos/logo_css.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bootstrap{
+    background-image: url("./resources/logos/logo_bootstrap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.android{
+    background-image: url("./resources/logos/logo_android.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vsCode{
+    background-image: url("./resources/logos/logo_vsCode.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* proyectos */
+
+
