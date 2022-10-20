@@ -3,6 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* paleta de colores */
+:root {
+    /* link pallet */
+    /* https://colors.muz.li/palette/8a2be2/4a1e9e/ddcbff/bb98ff/ffffff */
+    --my-background: #edecec;
+    --my-shadow: #333;
+    --my-strong: #4a1e9e;
+    --my-hover: #340c5a;
+    --my-textLigth: #ddcbff;
+  }
+
+body{
+    background-color: var(--my-background);
+    color: var(--my-strong);
+}
+
+/* navbar */
+.navbar{
+    background-color: #4b1e9ee7
+}
+.navbar-brand{
+    color: var(--my-textLigth);
+}
+.navbar-nav li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--my-textLigth);
+}
+
+
 /* fotod e perfil */
 .foto{
     height: 300px;
@@ -14,13 +45,40 @@
     border-radius: 200px;
 }
 
+/* presentacion */
+.info-container{
+    background-color: var(--my-strong);
+    color: var(--my-textLigth);
+    font-size: 1.3em;
+}
+
+/* habilidades */
+.skill-list{
+    font-size: 1.2em;
+}
+
 /* conosimiento = tamaño de los contenedores para los logos */
 
+.conosimientos{
+    background-color: var(--my-strong);
+}
+
+.conosimiento-title{
+    color: var(--my-textLigth);
+    text-align: center;
+}
 .conosimiento{
     height: 100px;
     width: 100px;
 }
 
+.conosimiento:hover{
+    box-shadow: 0 0 50px 1px var(--my-textLigth);
+    background-color: var(--my-textLigth);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: all 1s;
+}
 /* logos de conosimientos y programas */
 .dart{
     background-image: url("./resources/logos/logo_dart.png");
@@ -71,6 +129,44 @@
     background-position: center;
 }
 
-/* proyectos */
+.btn{
+    background-color: var(--my-textLigth);
+    color: var(--my-strong);
+}
+
+.btn:hover{
+    box-shadow: 0 0 15px 3px var(--my-strong);
+    background-color: var(--my-strong);
+    color: var(--my-textLigth); 
+    transition: all 1s;
+}
+
+/* contacto */
+
+.contact{
+    height: 50px;
+    width: 50px;
+}
+
+.facebook{
+    background-image: url("./resources/logos/redes/logo_facebook.png");
+    background-position: center;
+    background-size: contain;
+}
+.instagram{
+    background-image: url("./resources/logos/redes/logo_instragram.png");
+    background-position: center;
+    background-size: contain;
+}
+.telegram{
+    background-image: url("./resources/logos/redes/logo_telegram.png");
+    background-position: center;
+    background-size: contain;
+}
+.whatsapp{
+    background-image: url("./resources/logos/redes/log_whatsapp.png");
+    background-position: center;
+    background-size: contain;
+}
 
 
