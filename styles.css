@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* paleta de colores */
 :root {
     /* link pallet */
@@ -13,7 +7,17 @@
     --my-strong: #4a1e9e;
     --my-hover: #340c5a;
     --my-textLigth: #ddcbff;
-  }
+}
+
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
 
 body{
     background-color: var(--my-background);
@@ -22,27 +26,49 @@ body{
 
 /* navbar */
 .navbar{
-    background-color: #4b1e9ee7
+    background-color: #4b1e9ee7;
+    z-index: 100;
 }
 .navbar-brand{
     color: var(--my-textLigth);
 }
-.navbar-nav li a{
+.navbar-nav li>a{
     text-decoration: none;
     margin: 0 10px;
     color: var(--my-textLigth);
 }
 
+.navbar-nav li>a:hover{
+    font-size: 1.2em;
+    transition: all 1s;
+}
 
-/* fotod e perfil */
+.navbar-toggler{
+    background-color: var(--my-textLigth);
+}
+
+.h2{
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* infoormacion  */
+.info-container{
+    width: 100%;
+}
+
 .foto{
     height: 300px;
     width: 300px;
+    margin-top: 30px;
     background-image: url("./resources/foto/foto-talento.png");
     background-position: center;
     background-size: cover;
     border: 1px solid;
     border-radius: 200px;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	/* transform: translatey(0px); */
+	animation: float 6s ease-in-out infinite;
 }
 
 /* presentacion */
@@ -76,6 +102,8 @@ body{
     box-shadow: 0 0 50px 1px var(--my-textLigth);
     background-color: var(--my-textLigth);
     border-radius: 30px;
+    height: 120px;
+    width: 120px;
     border: 1px solid transparent;
     transition: all 1s;
 }
@@ -148,6 +176,12 @@ body{
     width: 50px;
 }
 
+.contact:hover{
+    height: 70px;
+    width: 70px;
+    transition: all 1s;
+}
+
 .facebook{
     background-image: url("./resources/logos/redes/logo_facebook.png");
     background-position: center;
@@ -169,4 +203,35 @@ body{
     background-size: contain;
 }
 
+/* keyframes */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+    25%{
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.4);
+		transform: translate3d(20px, -10px, 0)
+    }
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translate3d(0px, -20px, 0)
 
+	}
+    75%{
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.4);
+		transform: translate3d(-20px, -10px, 0)
+    }
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+/* query */
+@media (max-width: 600px) {
+    html {
+      font-size: 75%;
+    }
+
+    
+}
