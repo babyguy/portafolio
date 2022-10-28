@@ -61,7 +61,7 @@ body{
     height: 300px;
     width: 300px;
     margin-top: 30px;
-    background-image: url("./resources/foto/foto-talento.png");
+    background-image: url("./resources/foto/foto-talento.jpg");
     background-position: center;
     background-size: cover;
     border: 1px solid;
@@ -160,6 +160,7 @@ body{
 .btn{
     background-color: var(--my-textLigth);
     color: var(--my-strong);
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -186,21 +187,31 @@ body{
     background-image: url("./resources/logos/redes/logo_facebook.png");
     background-position: center;
     background-size: contain;
+    cursor: pointer
 }
 .instagram{
     background-image: url("./resources/logos/redes/logo_instragram.png");
     background-position: center;
     background-size: contain;
+    cursor: pointer
 }
 .telegram{
     background-image: url("./resources/logos/redes/logo_telegram.png");
     background-position: center;
     background-size: contain;
+    cursor: pointer
 }
 .whatsapp{
     background-image: url("./resources/logos/redes/log_whatsapp.png");
     background-position: center;
     background-size: contain;
+    cursor: pointer
+}
+.github{
+    background-image: url("./resources/logos/redes/log_github.png");
+    background-position: center;
+    background-size: contain;
+    cursor: pointer
 }
 
 /* keyframes */
